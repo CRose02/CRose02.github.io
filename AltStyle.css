@@ -61,7 +61,8 @@ a.navSection {
 	padding: 20px;
 	text-decoration: none;
 	color: #99004d;
-	font-size: 1.1vw;
+	font-size: 2.13rem;
+	#font-size: 1.1vw;
 	border-style: double none double none;
 	border-width: 6px;
 	border-color: #ccc;
@@ -76,7 +77,8 @@ div.dropDown {
 	display: none;
 	position: absolute;
 	width: 19%;
-	top: 238px;
+	top: 24rem;
+	left: 31%;
 	
 	border-style: double none double none;
 	border-width: 6px;
@@ -154,6 +156,10 @@ h3 {
 	font-size: 25px;
 }
 
+h4.resizable {
+	font-size: 0.98vw;
+	#font-size: 1.8rem;
+}
 
 p {
 	font-family: 'Noto Serif';
@@ -211,8 +217,17 @@ a {
 		font-size: 1.145rem;
 	}
 	
-	a.navSection {
-		font-size: 1.5rem;
+	h4.resizable {
+		font-size: 1.4rem;
+	}
+	
+	a.navSection, a.dropNavSection {
+		#font-size: 1.5rem;
+		font-size: 1.7rem;
+	}
+	
+	div.dropDown {
+		top: 23.4rem;
 	}
 }
 
@@ -222,6 +237,10 @@ a {
 	}
 	
 	a.navSection {
-		font-size: 2.13rem;
+	#	font-size: 2.13rem;
+	}
+	
+	h4.resizable {
+		font-size: 1.9rem;
 	}
 }
