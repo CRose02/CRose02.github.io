@@ -9,13 +9,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="AltStyle.css">
+<style>
+.needsChanging {
+	color: #f44;
+}
+</style>
 </head>
 <body>
 <header id="top">
 <h1>COREY ROSE</h1>
 <h4 class="col-md-5 nopad">Game designer & programmer</h4>
 <h4 class="col-md-7 nopad jumpleft">
-<div class="col-sm-4 nopad"><a href="mailto:email@mail.com">email@mail.com</a></div>
+<div class="col-sm-4 nopad"><a href="mailto:crose52@protonmail.com">crose52@protonmail.com</a></div>
 <div class="col-sm-4 nopad"><a href="https://myriadof.itch.io/" target="new">My itch.io page</a></div>
 <div class="col-sm-4 nopad">resume</div>
 </h4>
@@ -59,10 +64,10 @@
 <content>
 <img src="Assets/Untrashed/header.png" style="width:100%;">
 <p>
-Untrashed (2024). <span style="font-style:italic;">Help restore a poor polluted micro-biome stuck in an arcade claw machine to its former wonder.</span>
+Untrashed (2024). <span style="font-style:italic;">Restore a polluted micro-biome to its former wonder! Navigate the arcade claw machine environment to dispose of trash.</span>
 </p>
 <p>
-Untrashed is a game I made for the Ubisoft Australia Game Jam 2024. I made it by myself in just a few days over a break in the uni semester. 
+I made Untrashed independently for the Ubisoft Australia Game Jam 2024 in just a few days.  
 </p>
 <div class="contentContainer">
 <div class="col-md-4">
@@ -101,7 +106,7 @@ Untrashed is a game I made for the Ubisoft Australia Game Jam 2024. I made it by
 
 
 <p>
-Untrashed features a little biome in a claw machine where the player has to use the claw to grab pieces of trash out of the environment. I wanted it to evoke an ominous but serene feeling in the player, with the comfort and reassurance that everything will be okay in the end. Sort of the peaceful, melancholy feeling of sheltering cozy inside your home while a thunderstorm rages outside.
+Untrashed features a little biome in a claw machine where the player has to use the claw to grab pieces of trash out of the environment. <span class="needsChanging">I wanted it to evoke an ominous but serene feeling in the player, with the comfort and reassurance that everything will be okay in the end. Sort of the peaceful, melancholy feeling of sheltering cozy inside your home while a thunderstorm rages outside.</span>
 </p>
 
 
@@ -111,7 +116,7 @@ Untrashed features a little biome in a claw machine where the player has to use 
 </div>
 
 <p>
-I quickly got the claw moving and grabbing using Unity’s physics system with a spring joint and colliders, although I needed to edit lots of values to get it feeling right. While doing this I also whiteboxed the world and claw using Probuilder. 
+I quickly got the claw moving and grabbing using Unity’s physics system with a spring joint and colliders, although I needed to edit lots of values to get it moving naturally and feeling like a realistic claw machine. While doing this I also whiteboxed the world and claw using Probuilder. 
 </p>
 
 <div class="imgContentContainer">
@@ -119,13 +124,17 @@ I quickly got the claw moving and grabbing using Unity’s physics system with a
 </div>
 
 <p>
-By the end of the first day, I got it to the point where it felt like a real claw game. But it soon became clear that this felt more frustrating than calming. My initial goal was to replicate a claw machine in a fun scenario but real claw machines aren’t really fun, or at least not fun in the way a player can actually gain skill and progress with them. Real claw games are designed to get money off of people and then give them the anticipation of almost winning something while seldom actually giving away a prize. From then on, each time I felt across this disconnect, I went in favour or what felt fair and fun. I gave my claw more bounce, swing and “weight” while also making it quickly settle in its position so players didn’t need to wait for it. The claw won’t drop things on its way to the prize chute. If the player misses and doesn’t pick up anything, the claw will speed up to give control back to the player quicker. I added camera angles so the player could look directly front and side on to see if they were aligned properly but I made it even easier to see this by adding a spotlight that points directly down from the claw. Every design choice I made was to minimise the frustration and annoyance that can be found in real claw machines.
+By the end of the first day, I got it to the point where it felt like a real claw game. However, in real claw games, the claw is sluggish and difficult to position exactly where you want it and will even drop items before getting back to the prize chute. This proved to be frustrating more than anything and went directly against the intended player experience. 
+</p>
+
+<p>
+So, when I felt this disconnect, I modified the game to feel fair and fun. I gave my claw more bounce, swing and “weight” while also making it quickly settle in its position so players didn’t need to wait for it. The claw won’t drop things on its way to the prize chute. If the player misses and doesn’t pick up anything, the claw will speed up to give control back to the player quicker. I added camera angles so the player could look directly front and side on to see if they were aligned properly but I made it even easier to see this by adding a spotlight that points directly down from the claw. Every design choice I made was to minimise the frustration and annoyance that can be found in real claw machines. 
 </p>
 
 <div class="contentContainer">
 <div class="col-md-6 nopad">
 <p>
-I’d been doing a lot of programming recently for my university classes and I wanted to take a step back from that where I could for this project. So, I steered my design away from anything that would require me to code complex systems and just use Unity’s existing functionality wherever I could. 
+I wanted to focus on design and art for this project, so rather than programming complex systems, I steered my design towards whatever I could use Unity’s existing functionality for. This gave me more time to spend on these aspects. 
 </p>
 </div>
 
@@ -137,7 +146,7 @@ I’d been doing a lot of programming recently for my university classes and I w
 </div>
 
 <p>
-I rarely got to do art and sound for games so I was excited to jump into these aspects. I used a new program called MagicaVoxel for the 3D voxel environment and Photoshop (which I have years of experience in) for all the 2D pixel sprite art. I was quickly able to make some shaders using Unity’s shader graphs for the water and the glass surrounding the world. I also added some post-processing effects to help capture the mode and tone of the polluted landscape and a confetti particle effect for when the player successfully removes a piece of trash.
+I rarely got to do art and sound for games so I was excited to jump into these aspects. I used a new program called MagicaVoxel for the 3D voxel environment and <span class="needsChanging">Photoshop (which I have years of experience in)</span> for all the 2D pixel sprite art. I made shaders using Unity’s shader graphs for the water and the glass surrounding the world. I also added some post-processing effects to help capture the mode and tone of the polluted landscape and a confetti particle effect for when the player successfully removes a piece of trash.
 </p>
 
 <!-- Carousel here -->
@@ -243,7 +252,7 @@ Sound effects and ambience were pivotal in order to capture the feeling I was go
 </p>
 
 <p>
-After release people many people said they loved it, that it was cute, peaceful, creative, and relaxing. The 3D environment art and claw light was specifically praised by several people. 
+After release, I got positive feedback reporting it was cute, peaceful, creative, and relaxing. Specifically, the 3D environment art and claw light were praised by my peers. 
 </p>
 </div>
 
@@ -254,17 +263,17 @@ After release people many people said they loved it, that it was cute, peaceful,
 </div>
 </div>
 <p>
-There were a few reviews from people that said they felt the game was too slow and that the claw should move faster. I’m unsure if these players just weren’t the right people to enjoy this experience or if their suggestions truly would make the game more enjoyable for more people but I hesitate to increase the speed of the game since it would clash directly with the intended player experience. I wish I could’ve done more active playtesting to find what could be done to address this.  
+There were a few reviews from people that said they felt the game was too slow and suggested the claw move faster. I’m unsure if these players just weren’t the right people to enjoy this experience or if their suggestions truly would make the game more enjoyable for more people. 
 </p>
 
 <p>
-Given more time, there were only a few small things I would’ve changed. The claw occasionally get stuck in the ground (but quickly fixes itself so it doesn’t heavily impact the game), The water splash particle effect moves awkwardly with the bottles and the main menu is visually balanced for another sprite in the lower left that I didn’t get a chance to make. 
+However, I hesitate to increase the speed of the game since it would clash directly with the intended player experience. I wish I could’ve done more active playtesting to find a method to address this.  
 </p>
 
 <div class="contentContainer">
 <div class="col-md-6 nopad">
 <p>
-All in all, I think I successfully achieved all the points I wanted to focus on with this project. I utilised a unique mechanic. I scoped well, so there was plenty of time for me to focus on polish and feedback systems. And players responses have aligned significantly with the intended player experience so I’m quite proud of myself. 
+Upon review, I’m quite proud of myself and the way the game turned out. My design and goals were scoped well as evidenced by the fact I made a complete game and I achieved what I set out to do. I utilised a unique mechanic that allowed me to stand out amongst the other submissions; I used particle and sound effects to construct responsive interaction feedback systems; I gave myself enough time to get the game to a high degree of polish, with only occasional, minor bugs showing themselves; and players’ responses have aligned significantly with the intended player experience. 
 </p>
 
 <p>
@@ -287,7 +296,7 @@ Back to top
 </a></p>
 <h4 class="col-md-5 nopad">Corey Rose, game designer & programmer</h4>
 <h4 class="col-md-7 nopad jumpleft">
-<div class="col-sm-4 nopad"><a href="mailto:email@mail.com">email@mail.com</a></div>
+<div class="col-sm-4 nopad"><a href="mailto:crose52@protonmail.com">crose52@protonmail.com</a></div>
 <div class="col-sm-4 nopad"><a href="https://myriadof.itch.io/" target="new">My itch.io page</a></div>
 <div class="col-sm-4 nopad">resume</div>
 </h4>
