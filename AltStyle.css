@@ -79,7 +79,7 @@ div.dropDown {
 	width: 19%;
 	top: 24rem;
 	left: 31%;
-	
+	z-index: 1;
 	border-style: double none double none;
 	border-width: 6px;
 	border-color: #ccc;
