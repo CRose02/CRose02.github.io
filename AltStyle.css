@@ -10,6 +10,7 @@
 
 /* Big simple divs */
 body {
+	background-image: url("Assets/background.png");
 	background-color: #f1f1f1;
 	#text-align: center;
 	font-size: 100%;
@@ -123,6 +124,11 @@ content {
 div.contentContainer {
 	display: table;
 	width: 100%;
+}
+
+div.extraTopBotMargin {
+	margin-top: 40px;
+	#margin-bottom: 20px;
 }
 
 div.imgContentContainer {
