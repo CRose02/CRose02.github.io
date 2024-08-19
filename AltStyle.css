@@ -78,7 +78,7 @@ div.dropDown {
 	display: none;
 	position: absolute;
 	width: 19%;
-	top: 24rem;
+	top: 24.5rem;
 	left: 31%;
 	z-index: 1;
 	border-style: double none double none;
@@ -94,7 +94,7 @@ a.dropNavSection {
 	
 	text-decoration: none;
 	color: #99004d;
-	font-size: 20px;
+	font-size: 2.13rem;
 }
 
 div#dropDownActivate:hover div.dropDown {
@@ -112,6 +112,7 @@ a.dropNavSection:hover {
 /* Content */
 content {
 	display: block;
+	#width: 100%;
 	#background-color: #e3e3e3;
 	width: 50%;
 	margin: auto;
@@ -119,6 +120,10 @@ content {
 	margin-top: 20px;
 	padding: 0px;
 	text-align: left;
+}
+
+content.big {
+	width: 60%;
 }
 
 div.contentContainer {
@@ -162,6 +167,14 @@ h3 {
 	font-size: 25px;
 }
 
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
 h4.resizable {
 	font-size: 0.98vw;
 	#font-size: 1.8rem;
@@ -171,7 +184,8 @@ p {
 	font-family: 'Noto Serif';
 	#font-size: 20px;
 	#font-size: calc(6px + 0.7vw);
-	font-size: 0.84vw;
+	#font-size: 0.84vw;
+	font-size: 0.95vw;
 	#min-font-size: 5px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -179,7 +193,7 @@ p {
 }
 
 li {
-	font-size: 0.84vw;
+	font-size: 0.95vw;
 }
 
 a {
@@ -211,16 +225,18 @@ a {
 	text-align: right;
 }
 
-@media only screen and (max-width: 768px) {
-	.jumpleft {
-		text-align: left;
-		#color: #f00;
-	}
+.headshotcontainer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 70px;
+	padding-right: 70px;
 }
+
 
 @media only screen and (max-width: 1366px) {
 	p, li {
-		font-size: 1.145rem;
+		font-size: 1.29865rem;
+		#12.9865px
 	}
 	
 	h4.resizable {
@@ -233,13 +249,44 @@ a {
 	}
 	
 	div.dropDown {
-		top: 23.4rem;
+		top: 23.9rem;
+	}
+}
+
+@media only screen and (max-width: 1126px) {
+	.jumpleft {
+		text-align: left;
+		float: none;
+		#display:block;
+		display: table;
+		width: 100%;
+		#color: #f00;
+	}
+	
+	div.dropDown {
+		top: 26.3rem;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	div#dropDownActivate:hover div.dropDown {
+		display: none;
+	}
+	
+	content, content.big {
+		width: 90%;
+	}
+	
+	.headshotcontainer {
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 }
 
 @media only screen and (min-width: 1920px) {
 	p, li {
-		font-size: 1.613rem;
+		font-size: 1.82305rem;
+		#18.2305px
 	}
 	
 	a.navSection {
