@@ -19,16 +19,14 @@ body {
 header{
 	#text-align: center;
 	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin: auto;
 	display: table;
 }
 
 footer {
 	#text-align: center;
 	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin: auto;
 	border-style: double none none none;
 	border-width: 6px;
 	border-color: #ccc;
@@ -50,8 +48,10 @@ img#logo {
 /* Navigation */
 nav {
 	text-align: center;
-	padding-left: 12%;
-	padding-right: 12%;
+	width: 76%;
+	margin: auto;
+	#padding-left: 12%;
+	#padding-right: 12%;
 	height: 81px;
 	font-family: 'Noto Serif';
 }
@@ -123,7 +123,7 @@ content {
 }
 
 content.big {
-	width: 60%;
+	width: 70%;
 }
 
 div.contentContainer {
@@ -232,6 +232,27 @@ a {
 	padding-right: 70px;
 }
 
+@media only screen and (max-width: 1536px) {
+	header {
+		width: 80%;
+	}
+	nav {
+		width: 86%;
+	}
+	div.dropDown {
+		width: 21.5%;
+		left: 28.5%;
+	}
+	content {
+		width: 70%;
+	}
+	content.big {
+		width: 75%;
+	}
+	footer {
+		width: 80%;
+	}
+}
 
 @media only screen and (max-width: 1366px) {
 	p, li {
@@ -250,6 +271,10 @@ a {
 	
 	div.dropDown {
 		top: 23.9rem;
+	}
+	
+	content {
+		#width: 80%;
 	}
 }
 
@@ -280,6 +305,24 @@ a {
 	.headshotcontainer {
 		margin-left: 20%;
 		margin-right: 20%;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	header {
+		width: 95%;
+	}
+	nav {
+		width: 95%;
+	}
+	content {
+		width: 95%;
+	}
+	content.big {
+		width: 95%;
+	}
+	footer {
+		width: 95%;
 	}
 }
 
