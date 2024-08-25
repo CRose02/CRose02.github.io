@@ -137,6 +137,7 @@ div.extraTopBotMargin {
 }
 
 div.imgContentContainer {
+	display: table;
 	width: 100%;
 	text-align: center;
 	margin: auto;
@@ -164,7 +165,7 @@ h2 {
 	padding-bottom: 20px;
 }
 h3 {
-	font-size: 25px;
+	font-size: 30px;
 }
 
 h4 {

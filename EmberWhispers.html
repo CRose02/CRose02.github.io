@@ -14,6 +14,7 @@
 	color: #a22;
 }
 </style>
+<link rel="icon" type="image/x-icon" href="Assets/icon.png">
 </head>
 <body>
 <header id="top">
@@ -44,31 +45,35 @@
 		
 		<!--DROPDOWN MENU-->
 		<div class="dropDown">
+		<!--
 			<a href="WithoutASound.html" class="dropNavSection">
 				Without a Sound
 			</a>
 			<a href="#" class="dropNavSection">
 				Train Rush VR
 			</a>
+		-->
 			<a href="Untrashed.html" class="dropNavSection">
 				Untrashed
 			</a>
 			<a href="EmberWhispers.html" class="dropNavSection">
 				Do you hear the embers whisper?
 			</a>
+		<!--
 			<a href="https://conundrum55.itch.io/city-tickler" class="dropNavSection">
 				City Tickler
 			</a>
+		-->
 			<a href="RuralRegen.html" class="dropNavSection">
 				Rural Regen
 			</a>
 		</div>
 	</div>
 	
-	<a href="#" class="navSection">
+	<a href="pitch.html" class="navSection">
 		Pitch
 	</a>
-	<a href="#" class="navSection">
+	<a href="about.html" class="navSection">
 		About
 	</a>
 </nav>
@@ -76,7 +81,7 @@
 
 <img src="Assets/EmberWhispers/Header4.png" style="width:100%;">
 <p>
-Do You Hear The Embers Whisper? (2024). <span style="font-style:italic;">Explore a dark, grim underground maze.</span>
+Do you hear the embers whisper? (2024). <span style="font-style:italic;">Explore a dark, grim underground maze.</span>
 </p>
 <p>
 I made Do You Hear The Embers Whisper? over the 2023/24 summer as in independent project to learn more about Unity's lighting, VFX and shader systems.  
@@ -122,13 +127,141 @@ I wanted to make an eerie, atmospheric experience, in which the player can explo
 </div>
 
 <p>
-Talk about main stuff.
+I was able to gain more experience with some areas that I already had some degree of familiarity with such as programming a first-person controller, level design using Unity’s ProBuilder package, particle effects, and sound effects editing and reverb while also looking into some new things like Unity’s URP post-processing effects and lighting.
 </p>
 
-<div class="contentContainer">
+<div class="imgContentContainer">
+<img src="Assets/EmberWhispers/a1.gif" class="imgContent">
+</div>
+<div class="imgContentContainer">
+<img src="Assets/EmberWhispers/a3.gif" class="imgContent mar">
+</div>
+<div class="imgContentContainer">
+<img src="Assets/EmberWhispers/a4.gif" class="imgContent mar">
+</div>
+<div class="imgContentContainer">
+<img src="Assets/EmberWhispers/ss1.png" class="imgContent mar">
+</div>
+
+<!-- Carousel here -->
+<div class="contentContainer imgshadow mar">
+  <div id="car" class="carousel slide" data-ride="carousel" data-interval="false">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#car" data-slide-to="0" class="active"></li>
+      <li data-target="#car" data-slide-to="1"></li>
+      <li data-target="#car" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+	  <div class="item active">
+        <a href="Assets/EmberWhispers/water_shader.png" target="new"><img src="Assets/EmberWhispers/water_shader.png" style="width:100%;"></a>
+        <div class="carousel-caption">
+          <h4>Water Shader</h4>
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <a href="Assets/EmberWhispers/floor_shader.png" target="new"><img src="Assets/EmberWhispers/floor_shader.png" style="width:100%;"></a>
+        <div class="carousel-caption">
+          <h4>Floor Shader</h4>
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <a href="Assets/EmberWhispers/wall_shader.png" target="new"><img src="Assets/EmberWhispers/wall_shader.png" style="width:100%;"></a>
+        <div class="carousel-caption">
+          <h4>Wall Shader</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#car" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left outline"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#car" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right outline"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<p>
+However, the main thing I wanted to focus on was shaders. I had a water shader that I had been slowly improving as I brought it to new projects, so it seemed perfect to integrate it into this one. I removed some of the features that would be excessive for the scale of the puddles, like foam and intersection detection. I then modified its speed, scale and colour to fit the environment. 
+</p>
+<p>
+I also needed some materials for the environment. I found some free ones online that almost fit the look I was going for, but not quite. So I thought I would see how well blending some together with a shader would look. This turned out to be incredibly successful and I was able to get materials that looked really good and fit the tone of the world. I even added some noise that decreased to allow the grim to climb the walls in random splotches. 
+</p>
+
+<div class="contentContainer mar">
+<div class="col-md-6 nopad">
+<img src="Assets/EmberWhispers/floormat1.png" style="width:100%;">
+<img src="Assets/EmberWhispers/floormat2.png" style="width:100%;">
+<img src="Assets/EmberWhispers/wallmat1.png" style="width:100%;" class="mar">
+<img src="Assets/EmberWhispers/wallmat2.png" style="width:100%;">
+</div>
+<div class="col-md-6 nopad">
+<!-- Carousel here -->
+<div class="contentContainer imgshadow mar" style="width:90%;margin:auto;">
+  <div id="car2" class="carousel slide" data-ride="carousel" data-interval="false">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#car2" data-slide-to="0" class="active"></li>
+      <li data-target="#car2" data-slide-to="1"></li>
+      <li data-target="#car2" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+	  <div class="item active">
+        <a href="Assets/EmberWhispers/water_material.png" target="new"><img src="Assets/EmberWhispers/water_material.png" style="width:100%;"></a>
+        <div class="carousel-caption">
+          <h4>Water Material</h4>
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <a href="Assets/EmberWhispers/floor_material.png" target="new"><img src="Assets/EmberWhispers/floor_material.png" style="width:100%;"></a>
+        <div class="carousel-caption">
+          <h4>Floor Material</h4>
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <a href="Assets/EmberWhispers/wall_material.png" target="new"><img src="Assets/EmberWhispers/wall_material.png" style="width:100%;"></a>
+        <div class="carousel-caption">
+          <h4>Wall Material</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#car2" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left outline"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#car2" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right outline"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="imgContentContainer">
+<img src="Assets/EmberWhispers/shader_level.gif" class="imgContent mar" style="width:100%;">
+</div>
+
+<div class="contentContainer mar">
 <div class="col-md-6 nopad">
 <p>
-I think I did pretty gud.
+Originally, I had thought about making this environment into a puzzle-exploration game but the break between uni semesters drew to an end so I decided to cull that to cut back on the scope and polish the project to a level I could be proud of. And I believe I’ve achieved that. Through this project, I’ve learned a lot about Unity’s lighting system and shaders and I’m very happy with the visuals and how the experience turned out. 
 </p>
 
 <p>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio - Corey Rose</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="AltStyle.css">
+<style>
+.needsChanging {
+	color: #a22;
+}
+</style>
+<link rel="icon" type="image/x-icon" href="Assets/icon.png">
+</head>
+<body>
+<header id="top">
+<h1>COREY ROSE</h1>
+<h4 class="col-md-5 nopad jumpleft" style="text-align:left;">Game Designer & Programmer</h4>
+<h4 class="col-md-7 nopad jumpleft">
+	<span style="padding-right:20px;">
+		<a href="https://myriadof.itch.io/" target="new"><img src="Assets/ItchLogo.png" width="25px"></a>
+		<a href="https://www.linkedin.com/in/corey-rose-a96b692b6" target="new"><img src="Assets/LinkedinLogo.png" width="25px"></a>
+	</span>
+	<span style="padding-right:20px;">
+		<a href="mailto:crose52@protonmail.com">crose52@protonmail.com</a>
+	</span>
+	<span style="padding-right:0px;">
+		<a href="Resume - Corey Rose.pdf" target="new">resume</a>
+	</span>
+</h4>
+</header>
+<nav>
+	<a href="index.html" class="navSection">
+		Home
+	</a>
+
+	<div id ="dropDownActivate">
+		<a href="games.html" class="navSection" id="dropDownOrigin">
+			Games
+		</a>
+		
+		<!--DROPDOWN MENU-->
+		<div class="dropDown">
+		<!--
+			<a href="WithoutASound.html" class="dropNavSection">
+				Without a Sound
+			</a>
+			<a href="#" class="dropNavSection">
+				Train Rush VR
+			</a>
+		-->
+			<a href="Untrashed.html" class="dropNavSection">
+				Untrashed
+			</a>
+			<a href="EmberWhispers.html" class="dropNavSection">
+				Do you hear the embers whisper?
+			</a>
+		<!--
+			<a href="https://conundrum55.itch.io/city-tickler" class="dropNavSection">
+				City Tickler
+			</a>
+		-->
+			<a href="RuralRegen.html" class="dropNavSection">
+				Rural Regen
+			</a>
+		</div>
+	</div>
+	
+	<a href="pitch.html" class="navSection">
+		Pitch
+	</a>
+	<a href="about.html" class="navSection">
+		About
+	</a>
+</nav>
+<content>
+
+<h3 style="text-align:center;">IGB400 Project Pitch</h3>
+
+<p>
+I have a great interest in a wide variety of the aspects of game development. I’m very much a generalist and would rather end up in a smaller indie studio than having a very specific role in a large AAA studio. The roles in these small studios that I am aiming for are programmer, designer, tech artist, however I don’t prefer any particular one over any of the others. In my now six or so years of game development I’ve explored and gained proficiency in many areas. 
+</p>
+
+<p>Development environments and languages</p>
+<ul>
+<li>Game development in Unity and C#</li>
+<li>Game development without an engine using HTML5 and JavaScript</li>
+<li>Software development using Python, C#, Visual Basic</li>
+<li>Web development using HTML, CSS, JavaScript</li>
+</ul>
+
+<p>Software and skills</p>
+<ul>
+<li>Graphic design using Adobe Photoshop and Illustrator</li>
+<li>Audio manipulation using Audacity</li>
+<li>3D modelling using Maya and Blender</li>
+<li>Texturing with Adobe Substance Painter</li>
+</ul>
+
+<p>Programming experience</p>
+<ul>
+<li>VR development</li>
+<li>Real-time online multiplayer systems development</li>
+<li>Pathfinding algorithms</li>
+</ul>
+
+<p>
+My portfolio and released projects on itch.io show the majority of these skills (except multiplayer development which I’ve only explored in a yet-unreleased game).
+</p>
+
+<p>
+Many programming and tech artist positions in game studios in Australia mention wanting proficiency in rendering, shaders and other vfx areas. 
+</p>
+
+<div class="contentContainer">
+	<div class="col-md-6" style="text-align:center;">
+		<img src="Assets/Pitch/job1.png" style="width:100%;">
+		<p style="text-align:left;padding-top:0px;">
+			<i>Tech Artist – VFX</i> by Tantalus, 2024 (<a href="https://hitmarker.net/jobs/tantalus-tech-artist-vfx-2470554" target="new">https://hitmarker.net/jobs/tantalus-tech-artist-vfx-2470554</a>)
+		</p>
+	</div>
+	<div class="col-md-6" style="text-align:center;">
+		<img src="Assets/Pitch/job2.png" style="width:100%;">
+		<p style="text-align:left;padding-top:0px;">
+			<i>Senior Engine Programmer</i> by Gameloft, 2024 (<a href="https://hitmarker.net/jobs/gameloft-senior-engine-programmer-2602193" target="new">https://hitmarker.net/jobs/gameloft-senior-engine-programmer-2602193</a>)
+		</p>
+	</div>
+</div>
+
+<p>
+While I already have some experience with shaders and vfx, I would like to expand my knowledge with them to show expertise. I would also like to tackle procedural generation with this project since that would help show my advanced programming knowledge and it would also require to explore rendering techniques. These two areas are what I would like to focus on for this project. 
+</p>
+
+<p>
+My project will be more of a tech and visual demo than a fully developed game, but the world and visuals can still be explored by the player. It will take place in an underground cave network, featuring procedurally generated terrain. The environment will use a shader to sample its location and depending on various factors, will choose a suitable material or blend of materials for that location. Water will pool in various crevasses making use of a shader. Post-processing effects as well as particle effects will be used to add further enhancement to the visuals. The player will be able to explore and look around the world using a first person controller. 
+</p>
+
+<p>
+To generate the terrain, I’ll use multiple octaves of Perlin noise. These can be sampled and summed to get a height for the terrain in any specific spot and will let me construct a voxel model of the environment. I can then use the marching cubes algorithm to smooth the environment and generate a mesh for it. I can then utilise a shader to procedurally apply materials to this. 
+</p>
+
+<h4>Project Timeline</h4>
+
+<p>Week 7</p>
+<ul>
+<li>Further research on procedural generation</li>
+<li>Begin implementation of voxel environment generation with Perlin noise sampling</li>
+</ul>
+
+<p>Week 8</p>
+<ul>
+<li>Finalise voxel generation implementation</li>
+<li>Begin implementation of marching cubes algorithm</li>
+<li>Implement first person controller</li>
+</ul>
+
+<p>Week 9</p>
+<ul>
+<li>Continue balancing voxel generation inputs</li>
+<li>Continue with marching cubes algorithm implementation</li>
+</ul>
+
+<p>Week 10</p>
+<ul>
+<li>Implement water shader</li>
+<li>Continue with terrain generation</li>
+</ul>
+
+<p>Week 11</p>
+<ul>
+<li>Material shaders</li>
+<li>Tune terrain generation</li>
+</ul>
+
+<p>Week 12</p>
+<ul>
+<li>Implement post-processing effects</li>
+<li>Implement particle effects</li>
+<li>Polish shaders</li>
+</ul>
+
+<p>Week 12</p>
+<ul>
+<li>Final polish and release</li>
+</ul>
+
+<p>
+Should this timeline shows itself to be too unrealistic, I will need to cut back on the scope, likely starting with particle effects. If I find myself ahead of schedule, I would like to include potentially adding in a custom lighting shader or explore the possibility of translating some of my shaders into HLSL in order to learn the language. 
+</p>
+
+<p>
+This project, with explorations into shaders and procedural generation will make me more employable as a generalist, designer, programmer and tech artist. In the future I would also like to explore using Unreal Engine since Gameloft as well as many other Australian studios use it as their main engine and require employees be proficient in it. 
+</p>
+
+
+
+<h4>References</h4>
+
+<p>
+Tantalus. (2024). <i>Tech Artist – VFX</i>. Hitmarker. 
+<a href="https://hitmarker.net/jobs/tantalus-tech-artist-vfx-2470554" target="new">https://hitmarker.net/jobs/tantalus-tech-artist-vfx-2470554</a>
+</p>
+
+<p>
+Gameloft. (2024). <i>Senior Engine Programmer</i>. Hitmarker. 
+<a href="https://hitmarker.net/jobs/gameloft-senior-engine-programmer-2602193" target="new">https://hitmarker.net/jobs/gameloft-senior-engine-programmer-2602193</a>
+</p>
+
+<p>
+Jfokus. (2022, May 09). <i>Reinventing Minecraft world generation by Henrik Kniberg</i> [Video]. YouTube. 
+<a href="https://www.youtube.com/watch?v=ob3VwY4JyzE" target="new">https://www.youtube.com/watch?v=ob3VwY4JyzE</a>
+</p>
+
+<p>
+Ben Anderson (n.d.). <i>An Implementation of the Marching Cubes Algorithm</i>. Carleton. 
+<a href="https://www.cs.carleton.edu/cs_comps/0405/shape/marching_cubes.html" target="new">https://www.cs.carleton.edu/cs_comps/0405/shape/marching_cubes.html</a>
+</p>
+
+</content>
+
+<footer>
+<p style="text-align:center;"><a href="#top" id="toTop">
+Back to top
+</a></p>
+<h4 class="col-md-5 nopad jumpleft" style="text-align:left;">Corey Rose - Game Designer & Programmer</h4>
+<h4 class="col-md-7 nopad jumpleft">
+<span style="padding-right:20px;">
+<a href="https://myriadof.itch.io/" target="new"><img src="Assets/ItchLogo.png" width="25px"></a>
+<a href="https://www.linkedin.com/in/corey-rose-a96b692b6" target="new"><img src="Assets/LinkedinLogo.png" width="25px"></a>
+<!--<a href="https://myriadof.itch.io/" target="new">My itch.io page</a>-->
+</span>
+
+<span style="padding-right:20px;">
+<a href="mailto:crose52@protonmail.com">crose52@protonmail.com</a>
+</span>
+<span style="padding-right:0px;">
+<a href="Resume - Corey Rose.pdf" target="new">resume</a>
+</span>
+</h4>
+</footer>
+<script>
+</script>
+</body>
+</html>

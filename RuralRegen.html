@@ -14,6 +14,7 @@
 	color: #a22;
 }
 </style>
+<link rel="icon" type="image/x-icon" href="Assets/icon.png">
 </head>
 <body>
 <header id="top">
@@ -44,37 +45,147 @@
 		
 		<!--DROPDOWN MENU-->
 		<div class="dropDown">
+		<!--
 			<a href="WithoutASound.html" class="dropNavSection">
 				Without a Sound
 			</a>
 			<a href="#" class="dropNavSection">
 				Train Rush VR
 			</a>
+		-->
 			<a href="Untrashed.html" class="dropNavSection">
 				Untrashed
 			</a>
 			<a href="EmberWhispers.html" class="dropNavSection">
 				Do you hear the embers whisper?
 			</a>
+		<!--
 			<a href="https://conundrum55.itch.io/city-tickler" class="dropNavSection">
 				City Tickler
 			</a>
+		-->
 			<a href="RuralRegen.html" class="dropNavSection">
 				Rural Regen
 			</a>
 		</div>
 	</div>
 	
-	<a href="#" class="navSection">
+	<a href="pitch.html" class="navSection">
 		Pitch
 	</a>
-	<a href="#" class="navSection">
+	<a href="about.html" class="navSection">
 		About
 	</a>
 </nav>
 <content>
+<img src="Assets/RuralRegen/header2.png" style="width:100%;">
+<p>
+Rural Regen (2023). <span style="font-style:italic;">An isometric resource-management farming game about teaching students to use sustainable practices in order to clean polluted farmland and grow crops.</span>
+</p>
+<p>
+Developed in a group for Australian Urban Growers
+</p>
+<div class="contentContainer">
+<div class="col-md-3">
+<h4 class="resizable">Tools / software</h4>
+<ul>
+<li>Unity</li>
+<ul style="padding-left: 20px;">
+<li>C#</li>
+<li>Shader graphs</li>
+</ul>
+</ul>
+</div>
+<div class="col-md-3">
+<h4 class="resizable">My roles</h4>
+<ul>
+<li>Lead Programmer</li>
+<li>Designer</li>
+</ul>
+</div>
+<div class="col-md-3">
+<h4 class="resizable">Focus points</h4>
+<ul>
+<li>Design around a project brief and client</li>
+<li>Leading the programming of complex systems</li>
+</ul>
+</div>
+<div class="col-md-3">
+<h4 class="resizable">Collaborators</h4>
+<ul>
+<li><a href="https://sites.google.com/view/michaelandersongamedesign" target="new">Michael Anderson</a> - Designer</li>
+<li>Dan Lowe - Designer</li>
+<li><a href="https://minhwng.itch.io/" target="new">Minh Hung Dang</a> - 3D Artist</li>
+</ul>
+</div>
+</div>
 
-<p>Rural Regen</p>
+<p>
+Rural Regen was developed for 
+<a href="https://australianurbangrowers.com/" target="new">Australian Urban Growers.</a>
+ We were tasked with the creation of an interactive experience that targeted one point of the high school curriculum and could teach and assess students’ knowledge of this area. We chose year 9 HSIE, the impacts of unsustainable farming on the ecosystem.
+</p>
+
+<p>
+Rural Regen is a turn-based, resource-management farming game, in which players must balance their time and money to grow crops, earn money and keep their farmland healthy. 
+</p>
+
+<div class="contentContainer mar" style="position:relative;padding-top:56.25%;">
+<iframe class="imgshadow" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/FnS2M9dVx6g">
+</iframe>
+</div>
+
+<p>
+This project was an opportunity for the team to work on a project with a client, with the design based on the client brief. We had regular progress updates where we reported our progress to the client then modified the design based on discussion and feedback. 
+</p>
+
+<div class="imgContentContainer">
+	<img src="Assets/RuralRegen/a1.gif" class="imgContent">
+</div>
+<div class="imgContentContainer">
+	<img src="Assets/RuralRegen/a2.gif" class="imgContent mar">
+</div>
+<div class="imgContentContainer">
+	<img src="Assets/RuralRegen/a3.gif" class="imgContent mar">
+</div>
+
+<p>
+I was the lead programmer for this project. I was responsible for implementing complex systems such as the self-populating UI system, the weather system, the inventory system and how they all interacted with each other. I also consistently optimised the scripts I and other programmers were working on and optimised the environment geometry so it could more efficiently be passed to the GPU.
+</p>
+
+<p>
+One issue that was particularly programming intense was the tractor movement. I utilised Unity’s Navmesh system at first but the movement wasn’t what the team wanted. The tractor would turn to face its direction of motion significantly after it had changed direction and this looked quite poor. So I dissected the information passed back from the Navmesh system and maneuvered the tractor using this information. Now it was able to drive to a corner, stop, turn to face the direction it would soon be moving, then continue on its journey.
+</p>
+
+<div class="imgContentContainer">
+	<img src="Assets/RuralRegen/a5.gif" class="imgContent">
+</div>
+
+<p>
+I was also able to do the particle effects such as the rain and the dirt spray as seen in the gameplay clips. 
+</p>
+
+<div class="imgContentContainer">
+	<img src="Assets/RuralRegen/a4.gif" class="imgContent">
+</div>
+
+<div class="contentContainer mar">
+<div class="col-md-6 nopad">
+<p>
+Overall, I'm very happy with how the project turned out. The game is fun and engaging, the client was happy with it, we got good marks, and it is even featured on <a href="https://www.qut.edu.au/study/undergraduate/information-technology-and-games/student-games-showcase" target="new">QUT's website.</a>
+</p>
+
+<p>
+You can play the game for yourself <a href="https://conundrum55.itch.io/rural-regen" target="new">here.</a>
+</p>
+</div>
+
+<div class="col-md-6 nopad">
+	<div class="imgContentContainer">
+		<a href="https://conundrum55.itch.io/rural-regen" target="new"><img src="Assets/RuralRegen/thumbnail.png" class="imgContent"></a>
+	</div>
+</div>
+</div>
 
 </content>
 
